@@ -1,0 +1,42 @@
+/* Make body a vertical flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Make main a horizontal flex container */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Allow it to grow and shrink */
+}
+
+/* Article takes 2/3 width */
+article {
+    flex: 2;
+    overflow-y: auto; /* Enable vertical scroll if needed */
+}
+
+/* Aside takes 1/3 width */
+aside {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scroll if needed */
+}
+
+/* Optional: basic visual styling */
+header, footer {
+    background-color: #eee;
+    padding: 1em;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 1em;
+}
+
+aside {
+    background-color: #ddd;
+    padding: 1em;
+}
